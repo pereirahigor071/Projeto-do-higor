@@ -31,12 +31,12 @@
             color: white;
             padding: 20px 0;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.8em; /* Título maior */
+            font-size: 2.8em;
         }
 
         header p {
@@ -55,9 +55,9 @@
         section {
             background-color: white;
             padding: 25px;
-            margin-bottom: 25px; /* Mais espaço */
-            border-radius: 15px; /* Bordas mais suaves */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra suave */
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
         section h2 {
@@ -67,8 +67,7 @@
             margin-top: 0;
             font-size: 2em;
         }
-        
-        /* Instrução de Clique (Para máxima clareza) */
+
         .instrucao-clique {
             font-size: 1.15em;
             color: var(--rosa-destaque);
@@ -81,7 +80,6 @@
             border: 2px dashed var(--rosa-destaque);
         }
 
-        /* Layout do Menu */
         .menu-container {
             display: flex;
             flex-wrap: wrap;
@@ -99,67 +97,58 @@
             margin-top: 20px;
         }
 
-        /* ================================================= */
-        /* === FOCO MÁXIMO NO CLIQUE: TABELAS (O PEDIDO) === */
-        /* ================================================= */
         table {
             width: 100%;
-            border-collapse: separate; /* Permite bordas arredondadas e margin */
-            border-spacing: 0 8px; /* Espaço entre as linhas */
+            border-collapse: separate;
+            border-spacing: 0 8px;
         }
 
-        /* Sinaliza que a linha inteira é um botão */
         table tr {
             cursor: pointer; 
             transition: all 0.15s ease;
             border-radius: 10px; 
             background-color: #fff; 
             position: relative;
-            /* Efeito 3D: Elevação inicial */
             box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1); 
-            border-left: 5px solid transparent; /* Borda lateral para hover */
+            border-left: 5px solid transparent;
         }
 
         table td {
-            padding: 15px 15px; /* Aumenta a área de clique */
+            padding: 15px 15px;
             border-bottom: none; 
         }
-        
-        /* Preço: Onde o olho deve ir */
+
         table td:first-child {
             font-weight: 600;
         }
 
         table td:last-child {
             text-align: right;
-            color: var(--verde-whatsapp); /* Cor do WhatsApp para o preço */
+            color: var(--verde-whatsapp);
             font-weight: 800;
-            font-size: 1.4em; /* Preço grande */
+            font-size: 1.4em;
             transition: color 0.15s;
         }
 
-        /* EFEITO HOVER: A linha é um botão que se prepara para a ação */
         table tr:hover {
-            background-color: #e9ffea; /* Fundo verde super suave */
-            transform: translateY(-3px); /* Elevação perceptível */
-            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15); /* Sombra mais forte */
-            border-left: 5px solid var(--verde-whatsapp); /* Borda lateral VERDE de WhatsApp! */
+            background-color: #e9ffea;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+            border-left: 5px solid var(--verde-whatsapp);
         }
 
-        /* EFEITO DE AFUNDAMENTO AO CLICAR NA LINHA */
         table tr:active {
-            background-color: var(--verde-whatsapp); /* Fundo fica verde total */
+            background-color: var(--verde-whatsapp);
             color: white; 
-            transform: translateY(4px); /* Afunda 4px */
-            box-shadow: 0 0 0 rgba(0, 0, 0, 0.1); /* Remove a sombra 3D */
-            border-left-color: white; /* Borda branca */
+            transform: translateY(4px);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+            border-left-color: white;
         }
-        /* Reverte a cor do preço e do texto para branco ao clicar */
+
         table tr:active td, table tr:active td:last-child {
             color: white; 
         }
 
-        /* Outros estilos */
         .note {
             background-color: #e8eaf6; 
             padding: 10px;
@@ -168,8 +157,7 @@
             font-style: italic;
             color: var(--roxo-principal);
         }
-        
-        /* Estilo dos Complementos com Checkbox */
+
         .complementos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -194,8 +182,7 @@
             transform: translateY(-1px);
             box-shadow: 0 4px 0 var(--rosa-destaque);
         }
-        
-        /* EFEITO DE AFUNDAMENTO NO COMPLEMENTO */
+
         .complemento-item:active {
             top: 2px;
             box-shadow: 0 0 0 var(--rosa-destaque);
@@ -215,23 +202,18 @@
             flex-grow: 1;
         }
 
-        /* ================================================= */
-        /* === BOTÃO DE PEDIDO GERAL (Ênfase Máxima) === */
-        /* ================================================= */
         .whatsapp-button {
             display: block;
             background-color: var(--verde-whatsapp); 
             color: white;
-            padding: 20px; /* Aumenta o tamanho */
+            padding: 20px;
             text-align: center;
             text-decoration: none;
             font-weight: 800;
-            font-size: 1.5em; /* Fonte grande e imponente */
+            font-size: 1.5em;
             border-radius: 15px;
             margin-top: 30px;
             transition: all 0.1s;
-            
-            /* Efeito 3D: Sombra alta */
             box-shadow: 0 10px 0 var(--verde-escuro-whatsapp); 
             position: relative;
         }
@@ -241,14 +223,11 @@
             top: -2px; 
         }
 
-        /* EFEITO DE AFUNDAMENTO MÁXIMO AO CLICAR */
         .whatsapp-button:active {
-            top: 10px; /* Afunda 10px */
-            box-shadow: 0 0 0 var(--verde-escuro-whatsapp); /* Sombra some */
+            top: 10px;
+            box-shadow: 0 0 0 var(--verde-escuro-whatsapp);
         }
 
-
-        /* Estilo da Entrega */
         .delivery-section p {
             margin: 10px 0;
         }
@@ -262,7 +241,6 @@
             border-left: 5px solid #388e3c;
         }
 
-        /* Estilo do Rodapé */
         footer {
             background-color: #333;
             color: white;
@@ -281,14 +259,12 @@
             margin: 10px 0;
         }
 
-        /* Linha Divisória */
         hr {
             border: 0;
             border-top: 1px solid #ddd;
             margin: 30px 0;
         }
 
-        /* Responsividade para Telas Menores */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.5em;
@@ -307,13 +283,12 @@
         }
     </style>
     <script>
-        const phoneNumber = '55981248008'; 
+        const phoneNumber = '5585981248008'; 
 
         function redirectToWhatsApp(productName, productPrice, isAcaí) {
             let message = `Olá, gostaria de fazer um pedido.`;
             
             if (isAcaí) {
-                // Se for açaí, coleta os acompanhamentos
                 const checkboxes = document.querySelectorAll('#acai-complementos input:checked');
                 const selectedComplementos = Array.from(checkboxes).map(cb => cb.value);
                 
@@ -325,52 +300,40 @@
                 }
 
                 message += `\n\nItem: ${productName} - R$ ${productPrice}.${complementosText}`;
-
             } else {
-                // Para sorvetes/picolés, a mensagem é mais simples
                 message += `\n\nItem: ${productName} - R$ ${productPrice}.`;
             }
             
             message += `\n\nPor favor, me confirme a taxa de entrega.`;
-            
-            // Codifica a mensagem para URL
             const encodedMessage = encodeURIComponent(message);
-            
-            // Monta o link do WhatsApp
             const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-            
-            // Redireciona
             window.open(whatsappLink, '_blank');
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Seleciona as linhas da tabela de Sorvetes/Picolés (não açaí)
             const sorveteRows = document.querySelectorAll('.menu-group:first-child table tr');
             
             sorveteRows.forEach(row => {
                 row.addEventListener('click', () => {
                     const productName = row.cells[0].textContent.trim();
                     const productPrice = row.cells[1].textContent.replace('R$', '').trim(); 
-                    redirectToWhatsApp(productName, productPrice, false); // false para não ser açaí
+                    redirectToWhatsApp(productName, productPrice, false);
                 });
             });
 
-            // Seleciona as linhas da tabela de Açaí
             const acaiRows = document.querySelectorAll('.menu-group:last-child table tr');
             
             acaiRows.forEach(row => {
                 row.addEventListener('click', () => {
                     const productName = row.cells[0].textContent.trim();
                     const productPrice = row.cells[1].textContent.replace('R$', '').trim(); 
-                    redirectToWhatsApp(productName, productPrice, true); // true para ser açaí
+                    redirectToWhatsApp(productName, productPrice, true);
                 });
             });
             
-            // Torna o clique no label dos acompanhamentos o mesmo que clicar no checkbox
             const acaiItems = document.querySelectorAll('.complemento-item');
             acaiItems.forEach(item => {
                 item.addEventListener('click', (e) => {
-                    // Previne que o evento do label se propague para o item pai
                     const checkbox = item.querySelector('input[type="checkbox"]');
                     if (checkbox && e.target !== checkbox) {
                         checkbox.checked = !checkbox.checked;
@@ -379,7 +342,7 @@
             });
         });
     </script>
-    </head>
+</head>
 <body>
     <header>
         <h1>🍧 Gelados do Clemilson 🍓</h1>
@@ -398,21 +361,21 @@
                 <div class="menu-group">
                     <h3>🍦 Picolés e Sorvetes</h3>
                     <table>
-                        <tr data-product="Picolé cobertura"><td>Picolé cobertura</td><td>R$ 3,50</td></tr>
-                        <tr data-product="Picolé normal"><td>Picolé normal</td><td>R$ 2,50</td></tr>
-                        <tr data-product="Dindin (Geladinho)"><td>Dindin (Geladinho)</td><td>R$ 2,00</td></tr>
-                        <tr data-product="Garrafinha"><td>Garrafinha</td><td>R$ 2,00</td></tr>
-                        <tr data-product="Marujinho"><td>Marujinho</td><td>R$ 1,50</td></tr>
-                        <tr data-product="Sorvete (a partir de)"><td>Sorvete (a partir de)</td><td>R$ 5,00</td></tr>
+                        <tr><td>Picolé cobertura</td><td>R$ 3,50</td></tr>
+                        <tr><td>Picolé normal</td><td>R$ 2,50</td></tr>
+                        <tr><td>Dindin (Geladinho)</td><td>R$ 2,00</td></tr>
+                        <tr><td>Garrafinha</td><td>R$ 2,00</td></tr>
+                        <tr><td>Marujinho</td><td>R$ 1,50</td></tr>
+                        <tr><td>Sorvete (a partir de)</td><td>R$ 5,00</td></tr>
                     </table>
                 </div>
 
                 <div class="menu-group">
                     <h3>💜 Açaí & Creme Ninho</h3>
                     <table>
-                        <tr data-product="Copo 150ml de Açaí"><td>Copo 150ml</td><td>R$ 6,00</td></tr>
-                        <tr data-product="Açaí 330ml"><td>Açaí 330ml</td><td>R$ 13,00</td></tr>
-                        <tr data-product="Açaí na Hamburgueira"><td>Açaí na Hamburgueira</td><td>R$ 15,00</td></tr>
+                        <tr><td>Copo 150ml</td><td>R$ 6,00</td></tr>
+                        <tr><td>Açaí 330ml</td><td>R$ 13,00</td></tr>
+                        <tr><td>Açaí na Hamburgueira</td><td>R$ 15,00</td></tr>
                     </table>
                     <p class="note">✅ Temos **Creme Ninho**!</p>
                 </div>
@@ -477,8 +440,10 @@
     <footer>
         <p>Pronto para pedir? Clique no botão gigante abaixo!</p>
         <div class="contact-info">
-            <a href="https://wa.me/085981248008?text=Olá,%20gostaria%20de%20fazer%20um%20pedido%20geral.%20Por%20favor,%20me%20ajude%20com%20o%20cardápio." target="_blank" class="whatsapp-button">
-                 📲 **PEDIR AGORA VIA WHATSAPP** (98124-8008)
+            <a href="https://wa.me/5585981248008?text=Olá,%20gostaria%20de%20fazer%20um%20pedido%20geral.%20Por%20favor,%20me%20ajude%20com%20o%20cardápio." 
+               target="_blank" 
+               class="whatsapp-button">
+                 📲 **PEDIR AGORA VIA WHATSAPP** (85 9 8124-8008)
             </a>
         </div>
         <p>© Gelados do Clemilson. Todos os direitos reservados.</p>
